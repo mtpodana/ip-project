@@ -1,0 +1,54 @@
+// @import '../../../../../components/GlobalStyles/GlobalStyles.module.scss';
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  
+    .menu-item {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-between;
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      color: #fff;
+      cursor: pointer;
+  
+      &.active {
+        color: black;
+      }
+  
+      &:hover {
+        color: black;
+      }
+  
+      &:hover .hover-bottom {
+        background-color: #fff;
+      }
+
+      &.active .hover-bottom {
+        background-color: #fff;
+      }
+  
+      .hover-top {
+        width: 100%;
+        height: 30%;
+        background-color: transparent;
+      }
+  
+      .hover-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 70%;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  

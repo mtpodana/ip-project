@@ -1,0 +1,49 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    border:  solid black;
+    border-width: 0 0 1px 0;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 60%;
+    margin-left: 10px;
+}
+
+.search {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.search input {
+    border: 1px black solid;
+    width: 50%;
+    height: 30px;
+    margin-left: 200px;
+    box-shadow: 0.5px 0.5px;
+    padding-left: 5px;
+}
+.search_icon{
+    margin-left: 12px;
+    font-size: 23px;
+}
+.bookmark {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 1%;
+    margin-top: -20px;
+    margin-right: -5px;
+}
+.bookmark p{
+    margin-left: -15px;
+}
