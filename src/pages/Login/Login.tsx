@@ -31,7 +31,7 @@ const Login: React.FC<any> = ({ children }) => {
           <input type="checkbox"></input>
           <span>Remember me</span>
         </div>
-        <div >
+        <div className={cx('btn-login')}>
           <Button variant="contained" disableElevation className={cx("btn")}>
             Login
           </Button>

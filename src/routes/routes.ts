@@ -12,16 +12,16 @@ import Login from "../pages/Login";
 
 
 const publicRoutes = [
-    { path: config.routes.home, component: Home, layout: MainLayout },
-    { path: config.routes.user, component: User, layout: MainLayout },
-    { path: config.routes.account, component: Account, layout: MainLayout },
-    { path: config.routes.network, component: Network, layout: MainLayout },
+
     { path: config.routes.login, component: Login, layout: null },
 
 ]
   
-const privateRoutes: any = [
-    // { path: config.routes.admin, component: Admin, layout: AdminLayout },
+const privateRoutes= [
+    { path: config.routes.home, component: Home, layout: MainLayout },
+    { path: config.routes.user, component: User, layout: MainLayout },
+    { path: config.routes.account, component: Account, layout: MainLayout },
+    { path: config.routes.network, component: Network, layout: MainLayout },
 ]
   
 export { publicRoutes, privateRoutes };
