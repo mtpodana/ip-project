@@ -6,8 +6,13 @@ import { MainLayout } from "./layouts/MainLayout";
 import { publicRoutes,privateRoutes } from "./routes";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute"; 
 
+import { useState } from 'react';
+import MyContext from "./components/Context/MyContextProps";
+
 const App: React.FC = () => {
+  const [token, setToken] = useState('');
   return (
+    <MyContext.Provider value={{ token, setToken }}>
     <Router>
       <div className="App">
         <Routes>
@@ -50,11 +55,13 @@ const App: React.FC = () => {
                 key={index}
                 path={route.path}
                 element={
+                  
                   <ProtectedRoute>
                     <Layout>
                     <Page />
                   </Layout>
                   </ProtectedRoute>
+
                 }
               />
             );
@@ -62,6 +69,7 @@ const App: React.FC = () => {
         </Routes>
       </div>
     </Router>
+    </MyContext.Provider>
   );
 };
 
